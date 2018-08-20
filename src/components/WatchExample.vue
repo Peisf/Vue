@@ -22,7 +22,7 @@ export default {
     watch:{
         // 如果 `question` 发生改变，这个函数就会运行
         question: function(newQuestion,oldQuestion){
-            this.answer= 'Watting for you to stop typing...'
+            this.answer= 'Watting for you to stop typing...';
             this.debouncedGetAnswer()
         }
     },
@@ -38,11 +38,11 @@ export default {
     methods:{
         getAnswer:function(){
             if(this.question.indexOf('?')===-1){
-                this.answer = 'Questions usually contain a question mark. ;-)'
+                this.answer = 'Questions usually contain a question mark. ;-)';
                 return
             }
-            this.answer = 'Thinking...'
-            var vm = this
+            this.answer = 'Thinking...';
+            var vm = this;
             axios.get('https://yesno.wtf/api').then(function(response){
                  vm.answer = _.capitalize(response.data.answer)
             })
