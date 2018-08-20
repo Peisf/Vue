@@ -14,7 +14,7 @@
           {{todo.text}}
       </li>
     </ol>
-  <button v-on:click="reverseMessage">逆转消息</button>
+    <button v-on:click="reverseMessage">逆转消息</button>
 
     <router-link :to="{path:'WatchExample'}">watchExample</router-link>
   </div>
