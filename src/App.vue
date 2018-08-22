@@ -1,7 +1,9 @@
 <template>
     <div id="app">
-        <head-nav>
-        </head-nav>
+        <div :style="{ fontSize : postFontSize + 'em' }">
+            <head-nav title="我定义的标题名称" :isShow="true" v-on:enlarge-text="postFontSize += $event"></head-nav>
+        </div>
+        <head-nav title="这是另一个页面的标题" :isShow="false"></head-nav>
         <router-view/>
     </div>
 </template>
@@ -12,6 +14,11 @@
         name: 'App',
         components:{
             headNav
+        },
+        data(){
+            return{
+                postFontSize: 1
+            }
         }
     }
 </script>

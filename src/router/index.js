@@ -5,7 +5,7 @@ import WatchExample from '@/components/WatchExample'
 import ListRender from '@/components/ListRender'
 import EventManage from '@/components/EventManage'
 import formBind from '@/components/formBind'
-
+import ComponentBasis from '@/components/ComponentBasis'
 
 
 Vue.use(Router);
@@ -32,6 +32,10 @@ export default new Router({
             path:'/formBind',
             name:'formBind',
             component:formBind
+        },{
+            path:'/ComponentBasis',
+            name:'ComponentBasis',
+            component:ComponentBasis
         }
     ]
 })
