@@ -1,15 +1,18 @@
 <template>
     <div id="Basis">
         <tab-nav v-bind="post"></tab-nav>
+        <base-input v-model="username" class="username-input" placeholder="Enter your username"></base-input>
     </div>
 </template>
 
 <script>
     import tabNav from './tabs.vue'
+    import baseInput from './tabs.vue'
     export default {
         name: "ComponentBasis",
         components:{
-            tabNav
+            tabNav,
+            baseInput
         },
         data(){
             return{
