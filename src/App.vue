@@ -5,15 +5,17 @@
         </div>
         <head-nav title="这是另一个页面的标题" :isShow="false"></head-nav>
         <router-view/>
+        <!--<font-awesome-icon :icon="['fab', 'font-awesome']"/>-->
     </div>
 </template>
 <script>
     import headNav from './components/header_nav.vue'
-
+    import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
     export default {
         name: 'App',
         components:{
-            headNav
+            headNav,
+            FontAwesomeIcon,
         },
         data(){
             return{

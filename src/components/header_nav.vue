@@ -1,8 +1,6 @@
 <template>
     <div v-if="isShow" >This is Header Page.
-        <p>{{firstName}}</p>
-        <p>{{lastName}}</p>
-        <p>{{fullName}}</p>
+        <p><span class="fa fa-address-book"></span>{{fullName}}</p>
         <p>{{title}}</p>
         <input v-model="fullName">
         <button @click="$emit('enlarge-text',0.1)">Enlarge text</button>
