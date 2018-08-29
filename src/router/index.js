@@ -8,6 +8,7 @@ import formBind from '@/components/formBind'
 import ComponentBasis from '@/components/ComponentBasis'
 import SlotDemo from '@/components/SlotDemo'
 import KeepAlive from '@/components/KeepAlive'
+import TransitionDemo from '@/components/TransitionDemo'
 
 Vue.use(Router);
 
@@ -45,6 +46,10 @@ export default new Router({
             path:'/KeepAlive',
             name:'KeepAlive',
             component:KeepAlive
+        },{
+            path:'/Transition',
+            name:'TransitionDemo',
+            component:TransitionDemo
         }
     ]
 })
